@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Contact RM</title>
+  </head>
+  <body class="bg-radial-[at_50%_50%] from-sky-200 via-blue-400 to-indigo-900 to-100%">
+    <section class="py-16 px-4 max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 gap-10">
+        <div class="bg-white/40 backdrop-blur-md p-8 rounded-xl shadow-md">
+          <h3 class="text-4xl font-bold text-slate-800 mb-6">Contact Us</h3>
+          <form id="kontakForm" name="contact-form">
+            <!-- nama -->
+            <div class="mb-5">
+              <label for="nama" class="block">Full Name</label>
+              <input
+                type="text"
+                placeholder="budi santoso"
+                name="full name"
+                required
+                class="form-input w-full px-4 py-3 rounded-lg border border-slate-500 focus:outline-none"
+              />
+            </div>
+            <!-- email -->
+            <div class="mb-5">
+              <label for="email" class="block">Email</label>
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="budisantoso@gmail.com"
+                class="form-input w-full px-4 py-3 rounded-lg border border-slate-500 focus:outline-none"
+              />
+            </div>
+
+            <!-- contact -->
+            <div class="mb-5">
+              <label for="message" class="block">Message</label>
+              <textarea
+                id="pesan"
+                name="message"
+                required
+                rows="6"
+                class="form-textarea w-full px-4 py-3 rounded-lg border border-slate-500 focus:outline-none"
+                placeholder="Budi Santoso gaming abadi"
+              ></textarea>
+            </div>
+            <!-- submit -->
+            <button
+              type="submit"
+              id="submitBtn"
+              class="w-full bg-[#3B82F6] hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center cursor-pointer"
+            >
+              <i class="fa-solid fa-paper-plane"></i>
+              <span class="px-4">Submit</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="contact.js"></script>
+  </body>
+</html>
